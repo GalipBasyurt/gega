@@ -22,19 +22,31 @@
   </head>
   <body>
     <!-- Header section -->
-    <header class="bg-black py-12 text-gega-gray font-gemunu uppercase">
+    <header class="bg-black py-6 lg:py-12 text-gega-gray uppercase">
       <!-- header container -->
-      <div class="container flex items-center justify-between space-x-16">
+      <div
+        class="container flex items-center justify-between space-x-8 lg:space-x-16"
+      >
         <!-- logo -->
         <a
           href="#"
-          class="text-6xl font-bold bg-transparent bg-gradient-to-r bg-clip-text from-gega-red to-gega-gray"
+          class="pl-8 md:pl-0 text-4xl lg:text-6xl font-bold bg-transparent bg-gradient-to-r bg-clip-text from-gega-red to-gega-gray"
           >Gega</a
         >
+
+        <!-- mobile -->
+        <div class="block md:hidden pr-8">
+          <div class="space-y-1 cursor-pointer">
+            <div class="bg-gega-gray w-8 h-1 rounded-full"></div>
+            <div class="bg-gega-gray w-8 h-1 rounded-full"></div>
+            <div class="bg-gega-gray w-8 h-1 rounded-full"></div>
+          </div>
+        </div>
+
         <!-- navigation -->
-        <nav class="flex justify-between flex-1">
+        <nav class="hidden md:flex justify-between flex-1">
           <!-- menü -->
-          <div class="flex items-center space-x-8 text-lg">
+          <div class="flex items-center space-x-4 lg:space-x-8 lg:text-lg">
             <a href="#" class="hover:text-gega-melon transition duration-500"
               >Movie</a
             >
@@ -52,13 +64,13 @@
             >
           </div>
           <!-- login area -->
-          <div class="flex items-center space-x-8">
+          <div class="flex items-center lg:space-x-8 space-x-4">
             <!-- form area -->
             <form>
               <div class="border-r px-4 mx-4 py-1 border-gega-red group">
                 <input
                   type="text"
-                  class="bg-transparent border-b border-gega-red focus:outline-none w-44 opacity-0 group-hover:opacity-100 transition duration-500"
+                  class="bg-transparent border-b border-gega-red focus:outline-none w-20 lg:w-44 opacity-0 group-hover:opacity-100 transition duration-500"
                 />
                 <button class="-ml-4 group-hover:ml-0 transition duration-500">
                   <i
@@ -68,13 +80,13 @@
               </div>
             </form>
             <!-- login -->
-            <div class="flex items-center space-x-8">
+            <div class="flex items-center space-x-4 lg:space-x-8 lg:text-lg">
               <a href="#" class="hover:text-gega-melon transition duration-500"
                 >Login</a
               >
               <a
                 href="#"
-                class="bg-gega-red px-3 py-1 hover:bg-rose-600 hover:text-gega-gray transition duration-500 cursor-pointer"
+                class="bg-gega-red px-3 py-1 hover:bg-rose-600 hover:text-gega-gray transition duration-500 cursor-pointer whitespace-nowrap"
                 >Sıgn up</a
               >
             </div>
