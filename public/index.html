@@ -4,8 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./css/style.css" rel="stylesheet" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <!-- Header section -->
+    <header class="bg-black py-12 text-gega-gray font-gemunu uppercase">
+      <!-- header container -->
+      <div class="container flex items-center justify-between space-x-16">
+        <!-- logo -->
+        <a
+          href="#"
+          class="text-6xl font-bold bg-transparent bg-gradient-to-r bg-clip-text from-gega-red to-gega-gray"
+          >Gega</a
+        >
+        <!-- navigation -->
+        <nav class="flex justify-between flex-1">
+          <!-- menü -->
+          <div class="flex items-center space-x-8 text-lg">
+            <a href="#" class="hover:text-gega-melon transition duration-500"
+              >Movie</a
+            >
+            <a href="#" class="hover:text-gega-melon transition duration-500"
+              >Celebrities</a
+            >
+            <a href="#" class="hover:text-gega-melon transition duration-500"
+              >Blog</a
+            >
+            <a href="#" class="hover:text-gega-melon transition duration-500"
+              >news</a
+            >
+            <a href="#" class="hover:text-gega-melon transition duration-500"
+              >about</a
+            >
+          </div>
+          <!-- login area -->
+          <div class="flex items-center space-x-8">
+            <!-- form area -->
+            <form>
+              <div class="border-r px-4 mx-4 py-1 border-gega-red group">
+                <input
+                  type="text"
+                  class="bg-transparent border-b border-gega-red focus:outline-none w-44 opacity-0 group-hover:opacity-100 transition duration-500"
+                />
+                <button class="-ml-4 group-hover:ml-0 transition duration-500">
+                  <i
+                    class="fa-solid fa-magnifying-glass group-hover:text-gega-red transition duration-500"
+                  ></i>
+                </button>
+              </div>
+            </form>
+            <!-- login -->
+            <div class="flex items-center space-x-8">
+              <a href="#" class="hover:text-gega-melon transition duration-500"
+                >Login</a
+              >
+              <a
+                href="#"
+                class="bg-gega-red px-3 py-1 hover:bg-rose-600 hover:text-gega-gray transition duration-500 cursor-pointer"
+                >Sıgn up</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
   </body>
 </html>
