@@ -20,7 +20,13 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="font-open">
+  <body class="font-open dark">
+    <!-- dark light toogle -->
+    <div class="absolute top-1 left-5 text-lg">
+      <i class="fa-solid fa-sun text-gega-white" id="sun"></i>
+      <i class="fa-solid fa-moon text-black hidden" id="moon"></i>
+    </div>
+
     <!-- Header section -->
     <header class="bg-black py-6 lg:py-12 text-gega-gray uppercase">
       <!-- header container -->
@@ -829,7 +835,7 @@
             <!-- link 5 -->
             <div class="col-span-2 mb-2">
               <h3 class="text-gega-gray hover:text-gega-melon duration-500">
-                <a href="#">ABPUT</a>
+                <a href="#">ABOUT</a>
               </h3>
             </div>
           </div>
@@ -853,5 +859,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- script -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
